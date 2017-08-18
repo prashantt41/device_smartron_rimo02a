@@ -610,3 +610,9 @@ service time_daemon /system/vendor/bin/time_daemon
     class main
     user root
     group root
+
+service power_off_alarm /vendor/bin/power_off_alarm
+    class core
+    group system
+    disabled
+    oneshot
