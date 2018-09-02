@@ -384,7 +384,9 @@
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IFactory</name>
+            <name>IFactory</name> 
+	<instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.lineage.livedisplay</name>
