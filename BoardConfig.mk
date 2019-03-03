@@ -105,6 +105,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BACKLIGHT_PATH := "/sys/class/leds/lcd-backlight/brightness"
 BLINK_PATH := "/sys/class/leds/red/blink"
+WITH_LINEAGE_CHARGER := false
 
 # CNE
 BOARD_USES_QCNE := true
@@ -180,6 +181,9 @@ TARGET_PROVIDES_KEYMASTER := true
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Lineage Hardware
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
+
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
@@ -229,3 +233,6 @@ TARGET_USES_WCNSS_MAC_ADDR_REV		:= true
 
 # OTA Assert
 #TARGET_OTA_ASSERT_DEVICE := s2,le_s2,le_s2_ww
+
+# inherit from the proprietary version
+-include vendor/smartron/rimo02a/BoardConfigVendor.mk
