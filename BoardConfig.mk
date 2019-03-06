@@ -255,3 +255,6 @@ TARGET_USES_WCNSS_MAC_ADDR_REV		:= true
 
 # inherit from the proprietary version
 -include vendor/smartron/rimo02a/BoardConfigVendor.mk
+
+# WLAN
+WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
