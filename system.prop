@@ -254,3 +254,9 @@ persist.sys.usb.config=adb
 
 # Usb
 persist.sys.usb.config.extra=none
+
+# Play store
+ro.com.google.clientidbase.am=android-smartron
+ro.com.google.clientidbase.gmm=android-smartron
+ro.com.google.clientidbase.ms=android-smartron
+ro.com.google.clientidbase.yt=android-smartron
