@@ -220,6 +220,9 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 #include device/qcom/sepolicy-legacy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Telephony
+TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
+
 # Wifi
 BOARD_HAS_QCOM_WLAN			:= true
 BOARD_HAS_QCOM_WLAN_SDK			:= true
