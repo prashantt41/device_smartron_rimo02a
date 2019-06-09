@@ -239,3 +239,6 @@ persist.sys.usb.config=adb
 
 # Usb
 persist.sys.usb.config.extra=none
+
+#ion
+ro.ion.maintainer=Prashant
