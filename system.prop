@@ -240,6 +240,4 @@ persist.sys.usb.config=adb
 # Usb
 persist.sys.usb.config.extra=none
 
-
-#Legion Model
 ro.product.model=Smartron Srt

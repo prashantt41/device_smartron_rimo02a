@@ -28,24 +28,20 @@ $(call inherit-product, vendor/legion/config/common.mk)
 PRODUCT_DEVICE := rimo02a
 PRODUCT_NAME := legion_rimo02a
 PRODUCT_BRAND := Smartron
-TARGET DEVICE := rimo02a
 PRODUCT_MANUFACTURER := Smartron
-PRODUCT_MODEL := Smartron Srt
-
-PRODUCT_BUILD_PROP_OVERRIDES+= \
-PRODUCT_MODEL="Smartron Srt"
+PRODUCT_MODEL := T5524
 
 PRODUCT_GMS_CLIENTID_BASE := android-smartron
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_DEVICE=rimo02a
     PRIVATE_BUILD_DESC="rimo02a 8.0.0 T5524INDURC-475 release-keys"
 
 BUILD_FINGERPRINT= Smartron/srtphone/rimo02a:8.0.0/T5524INDURC-475/475:user/release-keys
 
-# Release name
-PRODUCT_RELEASE_NAME := rimo02a
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
-#Official
+#OFFICIAL
 LEGION_BUILD_TYPE := OFFICIAL
 CPU_MODEL := Snapdragon_652
 LEGION_MAINTAINER := Prashant
