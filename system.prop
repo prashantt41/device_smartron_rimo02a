@@ -239,5 +239,3 @@ persist.sys.usb.config=adb
 
 # Usb
 persist.sys.usb.config.extra=none
-
-ro.product.model=Smartron Srt
