@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "device_smartron_rimo02a",
+    "target_path": "device/smartron/rimo02a"
+  },
+  {
+    "repository": "kernel_smartron_msm8976",
+    "target_path": "kernel/smartrin/msm8976"
+  },
+  {
+    "repository": "vendor_smartroon_rimo02a",
+    "target_path": "vendor/smartron/rimo02a"
+  }
+]
