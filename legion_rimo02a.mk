@@ -24,11 +24,12 @@ $(call inherit-product, device/smartron/rimo02a/device.mk)
 # Inherit some common legionOS stuff.
 $(call inherit-product, vendor/legion/config/common.mk)
 
-## Device identifier. This must come after all inclusions
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rimo02a
 PRODUCT_NAME := legion_rimo02a
 PRODUCT_BRAND := Smartron
 PRODUCT_MANUFACTURER := Smartron
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-smartron
 
