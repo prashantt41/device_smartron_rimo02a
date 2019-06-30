@@ -597,6 +597,12 @@ on property:init.svc.recovery=running
 
 on property:dev.bootcomplete=1
     trigger enable-low-power
+    
+    # Remove settings cache, avoids derps after dirty flash
+    rm -rf /data/system/package_cache
+    
+on property:sys.boot_completed=1
+    setprop vendor.post_boot.parsed 1
 
 service time_daemon /system/vendor/bin/time_daemon
     class main
