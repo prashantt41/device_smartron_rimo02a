@@ -229,7 +229,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Sepolicy
 #include device/qcom/sepolicy-legacy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_base
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
@@ -258,3 +258,4 @@ TARGET_USES_WCNSS_MAC_ADDR_REV		:= true
 
 # WLAN
 WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
+
