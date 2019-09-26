@@ -15,3 +15,6 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/arrow_rimo02a.mk
+
+COMMON_LUNCH_CHOICES := \
+    arrow_rimo02a-userdebug
