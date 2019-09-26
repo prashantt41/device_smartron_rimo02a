@@ -68,7 +68,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 
 TARGET_KERNEL_SOURCE := kernel/smartron/msm8976
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_CONFIG := rk_defconfig
+TARGET_KERNEL_CONFIG := p_defconfig
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
