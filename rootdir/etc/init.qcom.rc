@@ -118,6 +118,10 @@ on boot
         
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/device/extldo
     chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
+  
+    # Sweep2Sleep permissions
+    chown system system /sys/sweep2sleep/vib_strength
+    chown system system /sys/sweep2sleep/sweep2sleep
 
     # KCAL permissions
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal
@@ -616,3 +620,4 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     group system
     disabled
     oneshot
+
