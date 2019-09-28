@@ -335,7 +335,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.qcom.usb.rc \
     init.qcom.power.rc \
-    loggy.sh \
     ueventd.qcom.rc \
     init.safailnet.rc
 

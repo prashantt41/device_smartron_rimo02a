@@ -126,14 +126,14 @@ BOARD_USES_QCNE := true
 TARGET_USES_CSVT := true
 
 # Dex
-#ifeq ($(HOST_OS),linux)
-#  ifneq ($(TARGET_BUILD_VARIANT),eng)
-#    WITH_DEXPREOPT_DEBUG_INFO := false
-#    USE_DEX2OAT_DEBUG := false
-#    DONT_DEXPREOPT_PREBUILTS := true
-#    WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-#  endif
-#endif
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    WITH_DEXPREOPT_DEBUG_INFO := false
+    USE_DEX2OAT_DEBUG := false
+    DONT_DEXPREOPT_PREBUILTS := true
+    WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+  endif
+endif
 #PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # Display
@@ -229,7 +229,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Sepolicy
 #include device/qcom/sepolicy-legacy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_base
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_base
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
