@@ -33,8 +33,8 @@ BUILD_BROKEN_PHONY_TARGETS := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
 # APEX
-#TARGET_FLATTEN_APEX := true
-DISABLE_APEX_LIBS_ABSENCE_CHECK := true
+TARGET_FLATTEN_APEX := true
+#DISABLE_APEX_LIBS_ABSENCE_CHECK := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -233,7 +233,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Sepolicy
 #include device/qcom/sepolicy-legacy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_base
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_base
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
